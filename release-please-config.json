@@ -5,25 +5,33 @@
   "bump-patch-for-minor-pre-major": true,
   "separate-pull-requests": false,
   "group-pull-requests": true,
+  "pull-request-title-pattern": "chore: release ${version}",
+  "tag-separator": "@",
+  "include-component-in-tag": true,
   "packages": {
     "packages/transformer": {
       "package-name": "@n8n-as-code/transformer",
+      "component": "@n8n-as-code/transformer",
       "changelog-path": "CHANGELOG.md"
     },
     "packages/sync": {
       "package-name": "@n8n-as-code/sync",
+      "component": "@n8n-as-code/sync",
       "changelog-path": "CHANGELOG.md"
     },
     "packages/skills": {
       "package-name": "@n8n-as-code/skills",
+      "component": "@n8n-as-code/skills",
       "changelog-path": "CHANGELOG.md"
     },
     "packages/cli": {
       "package-name": "@n8n-as-code/cli",
+      "component": "@n8n-as-code/cli",
       "changelog-path": "CHANGELOG.md"
     },
     "packages/vscode-extension": {
       "package-name": "n8n-as-code",
+      "component": "n8n-as-code",
       "changelog-path": "CHANGELOG.md"
     }
   },
