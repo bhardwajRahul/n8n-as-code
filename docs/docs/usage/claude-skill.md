@@ -76,6 +76,14 @@ https://etiennelescot.github.io/n8n-as-code/docs/usage/claude-skill/
 
 This is the correct **Plugin homepage** field for submissions.
 
+The public privacy policy page for submissions is:
+
+```text
+https://etiennelescot.github.io/n8n-as-code/docs/usage/claude-plugin-privacy/
+```
+
+This is the correct **Privacy policy URL** field for marketplace submissions.
+
 ## 📦 Building the Plugin Assets
 
 From the monorepo root:
@@ -218,6 +226,15 @@ This ensures consistency between AGENTS.md for other coding agents and SKILL.md 
 - ✅ Runs 100% locally (no external servers)
 - ✅ Uses NPX to execute `n8nac skills`
 - ✅ Open-source and auditable
+
+## ✅ Submission Guidance
+
+For the current plugin package, the safe marketplace submission choice is:
+
+- `Claude Code`: yes
+- `Claude Cowork`: only if you have explicitly tested and validated this plugin in Cowork
+
+The repository and published docs currently describe a Claude Code plugin first. Do not claim Cowork support in the submission unless you have verified the install and runtime behavior there.
 - ⚠️ Requires Node.js and npm on the machine
 - ⚠️ First run downloads `n8nac` via NPX
 
