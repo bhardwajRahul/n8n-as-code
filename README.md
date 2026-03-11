@@ -253,7 +253,7 @@ n8nac pull <id> > workflow.json && n8nac convert workflow.json --format typescri
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/image?repos=EtienneLescot/n8n-as-code&type=date&legend=top-left)](https://www.star-history.com/?repos=EtienneLescot%2Fn8n-as-code&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=EtienneLescot/n8n-as-code&type=date&legend=top-left)](https://www.star-history.com/#EtienneLescot/n8n-as-code&type=date&legend=top-left)
 
 ---
 
