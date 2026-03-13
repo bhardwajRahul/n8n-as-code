@@ -34,6 +34,13 @@ jobs:
           PENDING=$(node -e "const fs=require('fs'); process.stdout.write(JSON.parse(fs.readFileSync('release-plan.json','utf8')).changed ? 'true' : 'false');")
           echo "pending=$PENDING" >> "$GITHUB_OUTPUT"
 
+      - name: Detect stable extension publish
+        if: steps.pending.outputs.pending == 'true'
+        id: stable-extension
+        run: |
+          CHANGED=$(node -e "const fs=require('fs'); const plan=JSON.parse(fs.readFileSync('release-plan.json','utf8')); const pkg=plan.packages.find(item => item.name === 'n8n-as-code'); process.stdout.write(pkg && pkg.changed ? 'true' : 'false');")
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
       - name: Setup Node.js
         if: steps.pending.outputs.pending == 'true'
         uses: actions/setup-node@v4
@@ -108,7 +115,7 @@ jobs:
           fi
 
       - name: Remove private flag for extension packaging
-        if: steps.pending.outputs.pending == 'true'
+        if: steps.pending.outputs.pending == 'true' && steps.stable-extension.outputs.changed == 'true'
         run: |
           node -e "
             const fs = require('fs');
@@ -118,7 +125,7 @@ jobs:
           "
 
       - name: Publish VS Code Marketplace stable release
-        if: steps.pending.outputs.pending == 'true'
+        if: steps.pending.outputs.pending == 'true' && steps.stable-extension.outputs.changed == 'true'
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
         run: |
@@ -141,7 +148,7 @@ jobs:
           fi
 
       - name: Publish Open VSX stable release
-        if: steps.pending.outputs.pending == 'true'
+        if: steps.pending.outputs.pending == 'true' && steps.stable-extension.outputs.changed == 'true'
         env:
           OVSX_TOKEN: ${{ secrets.OVSX_TOKEN }}
         run: |
@@ -385,6 +392,13 @@ jobs:
           CHANGED=$(node -e "const fs=require('fs'); process.stdout.write(JSON.parse(fs.readFileSync('prerelease-plan.json','utf8')).changed ? 'true' : 'false');")
           echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
 
+      - name: Detect prerelease extension publish
+        if: steps.prerelease-plan.outputs.changed == 'true'
+        id: prerelease-extension
+        run: |
+          CHANGED=$(node -e "const fs=require('fs'); const plan=JSON.parse(fs.readFileSync('prerelease-plan.json','utf8')); const pkg=plan.packages.find(item => item.name === 'n8n-as-code'); process.stdout.write(pkg && pkg.changed ? 'true' : 'false');")
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
       - name: Refresh lockfile
         if: steps.prerelease-plan.outputs.changed == 'true'
         run: npm install --package-lock-only
@@ -426,7 +440,7 @@ jobs:
           fi
 
       - name: Remove private flag for extension packaging
-        if: steps.prerelease-plan.outputs.changed == 'true'
+        if: steps.prerelease-plan.outputs.changed == 'true' && steps.prerelease-extension.outputs.changed == 'true'
         run: |
           node -e "
             const fs = require('fs');
@@ -436,7 +450,7 @@ jobs:
           "
 
       - name: Publish VS Code Marketplace prerelease
-        if: steps.prerelease-plan.outputs.changed == 'true'
+        if: steps.prerelease-plan.outputs.changed == 'true' && steps.prerelease-extension.outputs.changed == 'true'
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
         run: |
@@ -459,7 +473,7 @@ jobs:
           fi
 
       - name: Skip Open VSX prereleases
-        if: steps.prerelease-plan.outputs.changed == 'true'
+        if: steps.prerelease-plan.outputs.changed == 'true' && steps.prerelease-extension.outputs.changed == 'true'
         run: |
           echo "ℹ️ Skipping Open VSX publish for next builds."
           echo "ℹ️ Open VSX exposes preview metadata, but downstream clients can still resolve the highest version by default."
