@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T04:52:15.678Z",
+  "generatedAt": "2026-07-17T04:14:25.699Z",
   "version": "1.0.0",
   "sourceUrl": "https://docs.n8n.io/llms.txt",
   "totalPages": 161,
@@ -9975,74 +9975,6 @@
     },
     {
       "id": "page-0101",
-      "title": "Troubleshooting",
-      "url": "https://docs.n8n.io/integrations/community-nodes/troubleshooting.md",
-      "urlPath": "integrations/community-nodes/troubleshooting.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).\n\n# Troubleshooting\n\n## Error: Missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>\n\nn8n installs community nodes directly onto the hard disk. The files must be available at startup for n8n to load them. If the packages aren't available at startup, you get an error warning of missing packages.\n\nIf running n8n using Docker: depending on your Docker setup, you may lose the packages when you recreate your container or upgrade your n8n version. You must either:\n\n* Persist the contents of the `~/.n8n/nodes` directory. This is the best option. If you follow the [Docker installation](/deploy/host-n8n/install-options/install-with-docker.md) guide, the setup steps include persisting this directory.\n* Set the `N8N_REINSTALL_MISSING_PACKAGES` environment variable to `true`.\n\nThe second option might increase startup time and may cause health checks to fail.\n\n## Prevent loading community nodes on n8n cloud <a href=\"#prevent-loading-community-nodes-on-n8n-cloud\" id=\"prevent-loading-community-nodes-on-n8n-cloud\"></a>\n\nIf your n8n cloud instance crashes and fails to start, you can prevent installed community nodes from loading on instance startup. Visit the [Cloud Admin Panel](/deploy/use-n8n-cloud/use-the-admin-dashboard.md) > **Manage** and toggle **Disable all community nodes** to **`true`**. This toggle is only visible when you allow community node installation.\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).  # Troubleshooting  ## Error: Missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>  n8n installs community nodes directly onto the hard disk. The files must be available at startup for n8n...",
-        "sections": [
-          {
-            "title": "Troubleshooting",
-            "level": 1,
-            "content": ""
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "troubleshooting",
-          "error:",
-          "missing",
-          "packages",
-          "href=\"#error",
-          "packages\"",
-          "id=\"error",
-          "packages\"></a>",
-          "prevent",
-          "loading",
-          "community",
-          "nodes",
-          "cloud",
-          "href=\"#prevent",
-          "cloud\"",
-          "id=\"prevent",
-          "cloud\"></a>"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 0,
-        "complexity": "beginner",
-        "readingTime": "2 min",
-        "contentLength": 1684,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "troubleshooting > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).\n\n# troubleshooting\n\n## error: missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>\n\nn8n installs community nodes directly onto the hard disk. the files must be available at startup for n8n to load them. if the packages aren't available at startup, you get an error warning of missing packages.\n\nif running n8n using docker: depending on your docker setup, you may lose the packages when you recreate your container or upgrade your n8n version. you must either:\n\n* persist the contents of the `~/.n8n/nodes` directory. this is the best option. if you follow the [docker installation](/deploy/host-n8n/install-options/install-with-docker.md) guide, the setup steps include persisting this directory.\n* set the `n8n_reinstall_missing_packages` environment variable to `true`.\n\nthe second option might increase startup time and may cause health checks to fail.\n\n## prevent loading community nodes on n8n cloud <a href=\"#prevent-loading-community-nodes-on-n8n-cloud\" id=\"prevent-loading-community-nodes-on-n8n-cloud\"></a>\n\nif your n8n cloud instance crashes and fails to start, you can prevent installed community nodes from loading on instance startup. visit the [cloud admin panel](/deploy/use-n8n-cloud/use-the-admin-dashboard.md) > **manage** and toggle **disable all community nodes** to **`true`**. this toggle is only visible when you allow community node installation.\n troubleshooting",
-        "importantTerms": [
-          "community",
-          "nodes",
-          "packages",
-          "cloud",
-          "troubleshooting",
-          "available",
-          "this",
-          "error",
-          "missing",
-          "startup",
-          "docker",
-          "your",
-          "prevent",
-          "loading"
-        ]
-      }
-    },
-    {
-      "id": "page-0102",
       "title": "Building community nodes",
       "url": "https://docs.n8n.io/integrations/community-nodes/building-community-nodes.md",
       "urlPath": "integrations/community-nodes/building-community-nodes.md",
@@ -10163,6 +10095,74 @@
           "requirements",
           "through",
           "creators"
+        ]
+      }
+    },
+    {
+      "id": "page-0102",
+      "title": "Troubleshooting",
+      "url": "https://docs.n8n.io/integrations/community-nodes/troubleshooting.md",
+      "urlPath": "integrations/community-nodes/troubleshooting.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).\n\n# Troubleshooting\n\n## Error: Missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>\n\nn8n installs community nodes directly onto the hard disk. The files must be available at startup for n8n to load them. If the packages aren't available at startup, you get an error warning of missing packages.\n\nIf running n8n using Docker: depending on your Docker setup, you may lose the packages when you recreate your container or upgrade your n8n version. You must either:\n\n* Persist the contents of the `~/.n8n/nodes` directory. This is the best option. If you follow the [Docker installation](/deploy/host-n8n/install-options/install-with-docker.md) guide, the setup steps include persisting this directory.\n* Set the `N8N_REINSTALL_MISSING_PACKAGES` environment variable to `true`.\n\nThe second option might increase startup time and may cause health checks to fail.\n\n## Prevent loading community nodes on n8n cloud <a href=\"#prevent-loading-community-nodes-on-n8n-cloud\" id=\"prevent-loading-community-nodes-on-n8n-cloud\"></a>\n\nIf your n8n cloud instance crashes and fails to start, you can prevent installed community nodes from loading on instance startup. Visit the [Cloud Admin Panel](/deploy/use-n8n-cloud/use-the-admin-dashboard.md) > **Manage** and toggle **Disable all community nodes** to **`true`**. This toggle is only visible when you allow community node installation.\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).  # Troubleshooting  ## Error: Missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>  n8n installs community nodes directly onto the hard disk. The files must be available at startup for n8n...",
+        "sections": [
+          {
+            "title": "Troubleshooting",
+            "level": 1,
+            "content": ""
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "troubleshooting",
+          "error:",
+          "missing",
+          "packages",
+          "href=\"#error",
+          "packages\"",
+          "id=\"error",
+          "packages\"></a>",
+          "prevent",
+          "loading",
+          "community",
+          "nodes",
+          "cloud",
+          "href=\"#prevent",
+          "cloud\"",
+          "id=\"prevent",
+          "cloud\"></a>"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 0,
+        "complexity": "beginner",
+        "readingTime": "2 min",
+        "contentLength": 1684,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "troubleshooting > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/integrations/community-nodes/troubleshooting.md).\n\n# troubleshooting\n\n## error: missing packages <a href=\"#error-missing-packages\" id=\"error-missing-packages\"></a>\n\nn8n installs community nodes directly onto the hard disk. the files must be available at startup for n8n to load them. if the packages aren't available at startup, you get an error warning of missing packages.\n\nif running n8n using docker: depending on your docker setup, you may lose the packages when you recreate your container or upgrade your n8n version. you must either:\n\n* persist the contents of the `~/.n8n/nodes` directory. this is the best option. if you follow the [docker installation](/deploy/host-n8n/install-options/install-with-docker.md) guide, the setup steps include persisting this directory.\n* set the `n8n_reinstall_missing_packages` environment variable to `true`.\n\nthe second option might increase startup time and may cause health checks to fail.\n\n## prevent loading community nodes on n8n cloud <a href=\"#prevent-loading-community-nodes-on-n8n-cloud\" id=\"prevent-loading-community-nodes-on-n8n-cloud\"></a>\n\nif your n8n cloud instance crashes and fails to start, you can prevent installed community nodes from loading on instance startup. visit the [cloud admin panel](/deploy/use-n8n-cloud/use-the-admin-dashboard.md) > **manage** and toggle **disable all community nodes** to **`true`**. this toggle is only visible when you allow community node installation.\n troubleshooting",
+        "importantTerms": [
+          "community",
+          "nodes",
+          "packages",
+          "cloud",
+          "troubleshooting",
+          "available",
+          "this",
+          "error",
+          "missing",
+          "startup",
+          "docker",
+          "your",
+          "prevent",
+          "loading"
         ]
       }
     },
@@ -10506,6 +10506,98 @@
     },
     {
       "id": "page-0107",
+      "title": "Evaluation",
+      "url": "https://docs.n8n.io/connect/n8n-api/evaluation.md",
+      "urlPath": "connect/n8n-api/evaluation.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).\n\n# Evaluation\n\nOperations about evaluation test runs\n\n## Retrieve test runs\n\n> Retrieve the evaluation test runs of a workflow.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testRunList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testRunSummary\"}},\"nextCursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"Paginate through test runs by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\"}}},\"testRunSummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Aggregated metrics collected across the run's test cases.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"finalResult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"Overall result of the run, derived from its test cases once completed.\"},\"testCaseCount\":{\"type\":\"integer\"},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve test runs\",\"description\":\"Retrieve the evaluation test runs of a workflow.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"name\":\"status\",\"in\":\"query\",\"description\":\"Status to filter the test runs by.\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testRunList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Retrieve a test run\n\n> Retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testRunId\":{\"name\":\"runId\",\"in\":\"path\",\"description\":\"The ID of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testRunSummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Aggregated metrics collected across the run's test cases.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"finalResult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"Overall result of the run, derived from its test cases once completed.\"},\"testCaseCount\":{\"type\":\"integer\"},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runId}\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve a test run\",\"description\":\"Retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"$ref\":\"#/components/parameters/testRunId\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testRunSummary\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Retrieve test run cases\n\n> Retrieve the per-case results of an evaluation test run.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testRunId\":{\"name\":\"runId\",\"in\":\"path\",\"description\":\"The ID of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testCaseExecutionList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testCaseExecution\"}},\"nextCursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"Paginate through test cases by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\"}}},\"testCaseExecution\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"evaluation_running\",\"success\",\"error\",\"warning\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Metrics produced by this test case.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"inputs\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Input data for this test case.\"},\"outputs\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Output data produced by this test case.\"},\"executionId\":{\"type\":\"string\",\"nullable\":true,\"description\":\"ID of the underlying workflow execution, if still retained.\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runId}/test-cases\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve test run cases\",\"description\":\"Retrieve the per-case results of an evaluation test run.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"$ref\":\"#/components/parameters/testRunId\"},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testCaseExecutionList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).  # Evaluation  Operations about evaluation test runs  ## Retrieve test runs  > Retrieve the evaluation test runs of a workflow.  ```json {\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",...",
+        "sections": [
+          {
+            "title": "Evaluation",
+            "level": 1,
+            "content": "Operations about evaluation test runs"
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "evaluation",
+          "retrieve",
+          "test",
+          "runs",
+          "cases"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 3,
+        "complexity": "beginner",
+        "readingTime": "2 min",
+        "contentLength": 9625,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "evaluation > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).\n\n# evaluation\n\noperations about evaluation test runs\n\n## retrieve test runs\n\n> retrieve the evaluation test runs of a workflow.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testrunlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testrunsummary\"}},\"nextcursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"paginate through test runs by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\"}}},\"testrunsummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"aggregated metrics collected across the run's test cases.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"finalresult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"overall result of the run, derived from its test cases once completed.\"},\"testcasecount\":{\"type\":\"integer\"},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve test runs\",\"description\":\"retrieve the evaluation test runs of a workflow.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"name\":\"status\",\"in\":\"query\",\"description\":\"status to filter the test runs by.\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testrunlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## retrieve a test run\n\n> retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testrunid\":{\"name\":\"runid\",\"in\":\"path\",\"description\":\"the id of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testrunsummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"aggregated metrics collected across the run's test cases.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"finalresult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"overall result of the run, derived from its test cases once completed.\"},\"testcasecount\":{\"type\":\"integer\"},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runid}\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve a test run\",\"description\":\"retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"$ref\":\"#/components/parameters/testrunid\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testrunsummary\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## retrieve test run cases\n\n> retrieve the per-case results of an evaluation test run.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testrunid\":{\"name\":\"runid\",\"in\":\"path\",\"description\":\"the id of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testcaseexecutionlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testcaseexecution\"}},\"nextcursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"paginate through test cases by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\"}}},\"testcaseexecution\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"evaluation_running\",\"success\",\"error\",\"warning\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"metrics produced by this test case.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"inputs\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"input data for this test case.\"},\"outputs\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"output data produced by this test case.\"},\"executionid\":{\"type\":\"string\",\"nullable\":true,\"description\":\"id of the underlying workflow execution, if still retained.\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runid}/test-cases\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve test run cases\",\"description\":\"retrieve the per-case results of an evaluation test run.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"$ref\":\"#/components/parameters/testrunid\"},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testcaseexecutionlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n evaluation",
+        "importantTerms": [
+          "type",
+          "description",
+          "true",
+          "test",
+          "string",
+          "components",
+          "nullable",
+          "evaluation",
+          "name",
+          "parameters",
+          "responses",
+          "runs",
+          "schema",
+          "object",
+          "retrieve",
+          "required",
+          "cursor",
+          "format",
+          "date",
+          "time",
+          "unauthorized",
+          "forbidden",
+          "workflow",
+          "schemas",
+          "metrics",
+          "additionalproperties",
+          "cases",
+          "page",
+          "json",
+          "tags",
+          "apikeyauth",
+          "bearerauth",
+          "testrunworkflowid",
+          "limit",
+          "default",
+          "nextcursor",
+          "enum",
+          "error",
+          "notfound",
+          "path",
+          "query",
+          "false",
+          "properties",
+          "status",
+          "completed",
+          "case",
+          "this",
+          "operations",
+          "about",
+          "maximum"
+        ]
+      }
+    },
+    {
+      "id": "page-0108",
       "title": "Workflow",
       "url": "https://docs.n8n.io/connect/n8n-api/workflow.md",
       "urlPath": "connect/n8n-api/workflow.md",
@@ -10605,98 +10697,6 @@
           "project",
           "connections",
           "json"
-        ]
-      }
-    },
-    {
-      "id": "page-0108",
-      "title": "Evaluation",
-      "url": "https://docs.n8n.io/connect/n8n-api/evaluation.md",
-      "urlPath": "connect/n8n-api/evaluation.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).\n\n# Evaluation\n\nOperations about evaluation test runs\n\n## Retrieve test runs\n\n> Retrieve the evaluation test runs of a workflow.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testRunList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testRunSummary\"}},\"nextCursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"Paginate through test runs by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\"}}},\"testRunSummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Aggregated metrics collected across the run's test cases.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"finalResult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"Overall result of the run, derived from its test cases once completed.\"},\"testCaseCount\":{\"type\":\"integer\"},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve test runs\",\"description\":\"Retrieve the evaluation test runs of a workflow.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"name\":\"status\",\"in\":\"query\",\"description\":\"Status to filter the test runs by.\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testRunList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Retrieve a test run\n\n> Retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testRunId\":{\"name\":\"runId\",\"in\":\"path\",\"description\":\"The ID of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testRunSummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Aggregated metrics collected across the run's test cases.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"finalResult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"Overall result of the run, derived from its test cases once completed.\"},\"testCaseCount\":{\"type\":\"integer\"},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runId}\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve a test run\",\"description\":\"Retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"$ref\":\"#/components/parameters/testRunId\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testRunSummary\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Retrieve test run cases\n\n> Retrieve the per-case results of an evaluation test run.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",\"description\":\"Operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"testRunWorkflowId\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"The ID of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testRunId\":{\"name\":\"runId\",\"in\":\"path\",\"description\":\"The ID of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testCaseExecutionList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testCaseExecution\"}},\"nextCursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"Paginate through test cases by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\"}}},\"testCaseExecution\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"evaluation_running\",\"success\",\"error\",\"warning\",\"cancelled\"]},\"runAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Metrics produced by this test case.\"},\"errorCode\":{\"type\":\"string\",\"nullable\":true},\"errorDetails\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true},\"inputs\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Input data for this test case.\"},\"outputs\":{\"type\":\"object\",\"nullable\":true,\"additionalProperties\":true,\"description\":\"Output data produced by this test case.\"},\"executionId\":{\"type\":\"string\",\"nullable\":true,\"description\":\"ID of the underlying workflow execution, if still retained.\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runId}/test-cases\":{\"get\":{\"tags\":[\"Evaluation\"],\"summary\":\"Retrieve test run cases\",\"description\":\"Retrieve the per-case results of an evaluation test run.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testRunWorkflowId\"},{\"$ref\":\"#/components/parameters/testRunId\"},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testCaseExecutionList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).  # Evaluation  Operations about evaluation test runs  ## Retrieve test runs  > Retrieve the evaluation test runs of a workflow.  ```json {\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Evaluation\",...",
-        "sections": [
-          {
-            "title": "Evaluation",
-            "level": 1,
-            "content": "Operations about evaluation test runs"
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "evaluation",
-          "retrieve",
-          "test",
-          "runs",
-          "cases"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 3,
-        "complexity": "beginner",
-        "readingTime": "2 min",
-        "contentLength": 9625,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "evaluation > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/evaluation.md).\n\n# evaluation\n\noperations about evaluation test runs\n\n## retrieve test runs\n\n> retrieve the evaluation test runs of a workflow.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testrunlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testrunsummary\"}},\"nextcursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"paginate through test runs by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\"}}},\"testrunsummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"aggregated metrics collected across the run's test cases.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"finalresult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"overall result of the run, derived from its test cases once completed.\"},\"testcasecount\":{\"type\":\"integer\"},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve test runs\",\"description\":\"retrieve the evaluation test runs of a workflow.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"name\":\"status\",\"in\":\"query\",\"description\":\"status to filter the test runs by.\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testrunlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## retrieve a test run\n\n> retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testrunid\":{\"name\":\"runid\",\"in\":\"path\",\"description\":\"the id of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testrunsummary\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"completed\",\"error\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"aggregated metrics collected across the run's test cases.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"finalresult\":{\"type\":\"string\",\"nullable\":true,\"enum\":[\"success\",\"error\",\"warning\"],\"description\":\"overall result of the run, derived from its test cases once completed.\"},\"testcasecount\":{\"type\":\"integer\"},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runid}\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve a test run\",\"description\":\"retrieve a single evaluation test run of a workflow, including its aggregated metrics and final result.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"$ref\":\"#/components/parameters/testrunid\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testrunsummary\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## retrieve test run cases\n\n> retrieve the per-case results of an evaluation test run.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"evaluation\",\"description\":\"operations about evaluation test runs\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"testrunworkflowid\":{\"name\":\"id\",\"in\":\"path\",\"description\":\"the id of the workflow.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"testrunid\":{\"name\":\"runid\",\"in\":\"path\",\"description\":\"the id of the test run.\",\"required\":true,\"schema\":{\"type\":\"string\"}},\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"testcaseexecutionlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/testcaseexecution\"}},\"nextcursor\":{\"type\":\"string\",\"nullable\":true,\"description\":\"paginate through test cases by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\"}}},\"testcaseexecution\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"status\":{\"type\":\"string\",\"enum\":[\"new\",\"running\",\"evaluation_running\",\"success\",\"error\",\"warning\",\"cancelled\"]},\"runat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"completedat\":{\"type\":\"string\",\"format\":\"date-time\",\"nullable\":true},\"metrics\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"metrics produced by this test case.\"},\"errorcode\":{\"type\":\"string\",\"nullable\":true},\"errordetails\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true},\"inputs\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"input data for this test case.\"},\"outputs\":{\"type\":\"object\",\"nullable\":true,\"additionalproperties\":true,\"description\":\"output data produced by this test case.\"},\"executionid\":{\"type\":\"string\",\"nullable\":true,\"description\":\"id of the underlying workflow execution, if still retained.\"}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/workflows/{id}/test-runs/{runid}/test-cases\":{\"get\":{\"tags\":[\"evaluation\"],\"summary\":\"retrieve test run cases\",\"description\":\"retrieve the per-case results of an evaluation test run.\",\"parameters\":[{\"$ref\":\"#/components/parameters/testrunworkflowid\"},{\"$ref\":\"#/components/parameters/testrunid\"},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/testcaseexecutionlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n evaluation",
-        "importantTerms": [
-          "type",
-          "description",
-          "true",
-          "test",
-          "string",
-          "components",
-          "nullable",
-          "evaluation",
-          "name",
-          "parameters",
-          "responses",
-          "runs",
-          "schema",
-          "object",
-          "retrieve",
-          "required",
-          "cursor",
-          "format",
-          "date",
-          "time",
-          "unauthorized",
-          "forbidden",
-          "workflow",
-          "schemas",
-          "metrics",
-          "additionalproperties",
-          "cases",
-          "page",
-          "json",
-          "tags",
-          "apikeyauth",
-          "bearerauth",
-          "testrunworkflowid",
-          "limit",
-          "default",
-          "nextcursor",
-          "enum",
-          "error",
-          "notfound",
-          "path",
-          "query",
-          "false",
-          "properties",
-          "status",
-          "completed",
-          "case",
-          "this",
-          "operations",
-          "about",
-          "maximum"
         ]
       }
     },
@@ -11063,6 +11063,179 @@
     },
     {
       "id": "page-0113",
+      "title": "Projects",
+      "url": "https://docs.n8n.io/connect/n8n-api/projects.md",
+      "urlPath": "connect/n8n-api/projects.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/projects.md).\n\n# Projects\n\nOperations about projects\n\n## Retrieve projects\n\n> Retrieve projects from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/project\"}},\"nextCursor\":{\"type\":\"string\",\"description\":\"Paginate through projects by setting the cursor parameter to a nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\",\"nullable\":true}}},\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/projects\":{\"get\":{\"tags\":[\"Projects\"],\"summary\":\"Retrieve projects\",\"description\":\"Retrieve projects from your instance.\",\"parameters\":[{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## Create a project\n\n> Create a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"badRequest\":{\"description\":\"The request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/projects\":{\"post\":{\"tags\":[\"Projects\"],\"summary\":\"Create a project\",\"description\":\"Create a project on your instance.\",\"requestBody\":{\"description\":\"Payload for project to create.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"201\":{\"description\":\"Operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badRequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## Update a project\n\n> Update a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"badRequest\":{\"description\":\"The request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}\":{\"put\":{\"tags\":[\"Projects\"],\"summary\":\"Update a project\",\"description\":\"Update a project on your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectId\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Updated project object.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badRequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Delete a project\n\n> Delete a project from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}\":{\"delete\":{\"tags\":[\"Projects\"],\"summary\":\"Delete a project\",\"description\":\"Delete a project from your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectId\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## List project members\n\n> Returns a list of all members of a project including their role. Requires user:list scope.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectMemberList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/projectMember\"}},\"nextCursor\":{\"type\":\"string\",\"description\":\"Paginate through project members by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first page of the collection.\",\"nullable\":true}}},\"projectMember\":{\"type\":\"object\",\"description\":\"A project member (user with their role in the project).\",\"properties\":{\"id\":{\"type\":\"string\",\"description\":\"The user's unique identifier.\",\"readOnly\":true},\"email\":{\"type\":\"string\",\"format\":\"email\",\"description\":\"The user's email address.\",\"readOnly\":true},\"firstName\":{\"type\":\"string\",\"maxLength\":32,\"description\":\"The user's first name.\",\"readOnly\":true},\"lastName\":{\"type\":\"string\",\"maxLength\":32,\"description\":\"The user's last name.\",\"readOnly\":true},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"When the user was created.\",\"readOnly\":true},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"When the user was last updated.\",\"readOnly\":true},\"role\":{\"type\":\"string\",\"description\":\"The user's role in the project (e.g. project:admin, project:viewer).\",\"readOnly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users\":{\"get\":{\"tags\":[\"Projects\"],\"summary\":\"List project members\",\"description\":\"Returns a list of all members of a project including their role. Requires user:list scope.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectMemberList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Add one or more users to a project\n\n> Add one or more users to a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users\":{\"post\":{\"tags\":[\"Projects\"],\"summary\":\"Add one or more users to a project\",\"description\":\"Add one or more users to a project on your instance.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Payload containing an array of one or more users to add to the project.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"relations\":{\"type\":\"array\",\"description\":\"A list of userIds and roles to add to the project.\",\"items\":{\"type\":\"object\",\"properties\":{\"userId\":{\"type\":\"string\",\"description\":\"The unique identifier of the user.\"},\"role\":{\"type\":\"string\",\"description\":\"The role assigned to the user in the project.\"}},\"required\":[\"userId\",\"role\"]}}},\"required\":[\"relations\"]}}}},\"responses\":{\"201\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Delete a user from a project\n\n> Delete a user from a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users/{userId}\":{\"delete\":{\"tags\":[\"Projects\"],\"summary\":\"Delete a user from a project\",\"description\":\"Delete a user from a project on your instance.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"name\":\"userId\",\"in\":\"path\",\"description\":\"The ID of the user.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Change a user's role in a project\n\n> Change a user's role in a project.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users/{userId}\":{\"patch\":{\"tags\":[\"Projects\"],\"summary\":\"Change a user's role in a project\",\"description\":\"Change a user's role in a project.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"name\":\"userId\",\"in\":\"path\",\"description\":\"The ID of the user.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Payload containing the new role to assign to the project user.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"role\":{\"type\":\"string\",\"description\":\"The role assigned to the user in the project.\"}},\"required\":[\"role\"]}}}},\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/projects.md).  # Projects  Operations about projects  ## Retrieve projects  > Retrieve projects from your instance.  ```json {\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations abou...",
+        "sections": [
+          {
+            "title": "Projects",
+            "level": 1,
+            "content": "Operations about projects"
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "projects",
+          "retrieve",
+          "create",
+          "project",
+          "update",
+          "delete",
+          "list",
+          "members",
+          "more",
+          "users",
+          "user",
+          "from",
+          "change",
+          "user's",
+          "role"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 8,
+        "complexity": "beginner",
+        "readingTime": "3 min",
+        "contentLength": 14086,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "projects > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/projects.md).\n\n# projects\n\noperations about projects\n\n## retrieve projects\n\n> retrieve projects from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/project\"}},\"nextcursor\":{\"type\":\"string\",\"description\":\"paginate through projects by setting the cursor parameter to a nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\",\"nullable\":true}}},\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/projects\":{\"get\":{\"tags\":[\"projects\"],\"summary\":\"retrieve projects\",\"description\":\"retrieve projects from your instance.\",\"parameters\":[{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## create a project\n\n> create a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"badrequest\":{\"description\":\"the request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/projects\":{\"post\":{\"tags\":[\"projects\"],\"summary\":\"create a project\",\"description\":\"create a project on your instance.\",\"requestbody\":{\"description\":\"payload for project to create.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"201\":{\"description\":\"operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badrequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## update a project\n\n> update a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"badrequest\":{\"description\":\"the request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}\":{\"put\":{\"tags\":[\"projects\"],\"summary\":\"update a project\",\"description\":\"update a project on your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectid\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestbody\":{\"description\":\"updated project object.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"204\":{\"description\":\"operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badrequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## delete a project\n\n> delete a project from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}\":{\"delete\":{\"tags\":[\"projects\"],\"summary\":\"delete a project\",\"description\":\"delete a project from your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectid\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## list project members\n\n> returns a list of all members of a project including their role. requires user:list scope.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectmemberlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/projectmember\"}},\"nextcursor\":{\"type\":\"string\",\"description\":\"paginate through project members by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first page of the collection.\",\"nullable\":true}}},\"projectmember\":{\"type\":\"object\",\"description\":\"a project member (user with their role in the project).\",\"properties\":{\"id\":{\"type\":\"string\",\"description\":\"the user's unique identifier.\",\"readonly\":true},\"email\":{\"type\":\"string\",\"format\":\"email\",\"description\":\"the user's email address.\",\"readonly\":true},\"firstname\":{\"type\":\"string\",\"maxlength\":32,\"description\":\"the user's first name.\",\"readonly\":true},\"lastname\":{\"type\":\"string\",\"maxlength\":32,\"description\":\"the user's last name.\",\"readonly\":true},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"when the user was created.\",\"readonly\":true},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"when the user was last updated.\",\"readonly\":true},\"role\":{\"type\":\"string\",\"description\":\"the user's role in the project (e.g. project:admin, project:viewer).\",\"readonly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}/users\":{\"get\":{\"tags\":[\"projects\"],\"summary\":\"list project members\",\"description\":\"returns a list of all members of a project including their role. requires user:list scope.\",\"parameters\":[{\"name\":\"projectid\",\"in\":\"path\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectmemberlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## add one or more users to a project\n\n> add one or more users to a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat",
+        "importantTerms": [
+          "description",
+          "type",
+          "project",
+          "projects",
+          "components",
+          "responses",
+          "name",
+          "string",
+          "true",
+          "unauthorized",
+          "user",
+          "required",
+          "schema",
+          "forbidden",
+          "tags",
+          "apikeyauth",
+          "bearerauth",
+          "role",
+          "json",
+          "parameters",
+          "readonly",
+          "your",
+          "instance",
+          "notfound",
+          "projectid",
+          "cursor",
+          "schemas",
+          "object",
+          "delete",
+          "operations",
+          "about",
+          "properties",
+          "users",
+          "from",
+          "openapi",
+          "info",
+          "title",
+          "public",
+          "version",
+          "servers",
+          "security",
+          "securityschemes",
+          "apikey",
+          "header",
+          "http",
+          "scheme",
+          "bearer",
+          "bearerformat",
+          "paths",
+          "summary"
+        ]
+      }
+    },
+    {
+      "id": "page-0114",
+      "title": "Discover",
+      "url": "https://docs.n8n.io/connect/n8n-api/discover.md",
+      "urlPath": "connect/n8n-api/discover.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/discover.md).\n\n# Discover\n\nAPI capability discovery\n\n## Discover available API capabilities\n\n> Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated API key. Use query parameters to narrow the response.<br>\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Discover\",\"description\":\"API capability discovery\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/discover\":{\"get\":{\"tags\":[\"Discover\"],\"summary\":\"Discover available API capabilities\",\"description\":\"Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated API key. Use query parameters to narrow the response.\\n\",\"parameters\":[{\"name\":\"include\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"schemas\"]},\"description\":\"Include additional data. Use \\\"schemas\\\" to inline request body schemas per endpoint, eliminating the need to fetch the full OpenAPI spec.\\n\"},{\"name\":\"resource\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"Filter to a specific resource (e.g. \\\"workflow\\\", \\\"tags\\\", \\\"credential\\\").\\n\"},{\"name\":\"operation\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"Filter to endpoints with a specific operation (e.g. \\\"read\\\", \\\"create\\\", \\\"list\\\").\\n\"}],\"responses\":{\"200\":{\"description\":\"Discovery response with available resources and endpoints.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"scopes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"The API key's active scopes\"},\"resources\":{\"type\":\"object\",\"additionalProperties\":{\"type\":\"object\",\"properties\":{\"operations\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"endpoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"method\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"operationId\":{\"type\":\"string\"},\"requestSchema\":{\"type\":\"object\",\"description\":\"Request body schema (only present when include=schemas and the endpoint accepts a request body).\\n\"}}}}}}},\"filters\":{\"type\":\"object\",\"description\":\"Available query parameter filters. The values arrays reflect what the caller's scopes permit.\\n\",\"additionalProperties\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"values\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}}}},\"specUrl\":{\"type\":\"string\",\"description\":\"URL to the full OpenAPI specification\"}}}}}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/discover.md).  # Discover  API capability discovery  ## Discover available API capabilities  > Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated AP...",
+        "sections": [
+          {
+            "title": "Discover",
+            "level": 1,
+            "content": "API capability discovery"
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "discover",
+          "available",
+          "capabilities"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 1,
+        "complexity": "beginner",
+        "readingTime": "1 min",
+        "contentLength": 3137,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "discover > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/discover.md).\n\n# discover\n\napi capability discovery\n\n## discover available api capabilities\n\n> returns a filtered capability map based on the caller's api key scopes. each resource includes the operations and endpoints accessible to the authenticated api key. use query parameters to narrow the response.<br>\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"discover\",\"description\":\"api capability discovery\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/discover\":{\"get\":{\"tags\":[\"discover\"],\"summary\":\"discover available api capabilities\",\"description\":\"returns a filtered capability map based on the caller's api key scopes. each resource includes the operations and endpoints accessible to the authenticated api key. use query parameters to narrow the response.\\n\",\"parameters\":[{\"name\":\"include\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"schemas\"]},\"description\":\"include additional data. use \\\"schemas\\\" to inline request body schemas per endpoint, eliminating the need to fetch the full openapi spec.\\n\"},{\"name\":\"resource\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"filter to a specific resource (e.g. \\\"workflow\\\", \\\"tags\\\", \\\"credential\\\").\\n\"},{\"name\":\"operation\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"filter to endpoints with a specific operation (e.g. \\\"read\\\", \\\"create\\\", \\\"list\\\").\\n\"}],\"responses\":{\"200\":{\"description\":\"discovery response with available resources and endpoints.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"scopes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"the api key's active scopes\"},\"resources\":{\"type\":\"object\",\"additionalproperties\":{\"type\":\"object\",\"properties\":{\"operations\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"endpoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"method\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"operationid\":{\"type\":\"string\"},\"requestschema\":{\"type\":\"object\",\"description\":\"request body schema (only present when include=schemas and the endpoint accepts a request body).\\n\"}}}}}}},\"filters\":{\"type\":\"object\",\"description\":\"available query parameter filters. the values arrays reflect what the caller's scopes permit.\\n\",\"additionalproperties\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"values\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}}}},\"specurl\":{\"type\":\"string\",\"description\":\"url to the full openapi specification\"}}}}}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n discover",
+        "importantTerms": [
+          "type",
+          "description",
+          "string",
+          "discover",
+          "object",
+          "available",
+          "query",
+          "scopes",
+          "endpoints",
+          "name",
+          "schema",
+          "properties",
+          "capability",
+          "resource",
+          "schemas",
+          "array",
+          "items",
+          "discovery",
+          "caller",
+          "operations",
+          "parameters",
+          "response",
+          "openapi",
+          "tags",
+          "responses",
+          "unauthorized",
+          "include",
+          "required",
+          "false",
+          "request",
+          "body"
+        ]
+      }
+    },
+    {
+      "id": "page-0115",
       "title": "Data Table",
       "url": "https://docs.n8n.io/connect/n8n-api/data-table.md",
       "urlPath": "connect/n8n-api/data-table.md",
@@ -11165,109 +11338,7 @@
       }
     },
     {
-      "id": "page-0114",
-      "title": "Projects",
-      "url": "https://docs.n8n.io/connect/n8n-api/projects.md",
-      "urlPath": "connect/n8n-api/projects.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/projects.md).\n\n# Projects\n\nOperations about projects\n\n## Retrieve projects\n\n> Retrieve projects from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/project\"}},\"nextCursor\":{\"type\":\"string\",\"description\":\"Paginate through projects by setting the cursor parameter to a nextCursor attribute returned by a previous request. Default value fetches the first \\\"page\\\" of the collection.\",\"nullable\":true}}},\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/projects\":{\"get\":{\"tags\":[\"Projects\"],\"summary\":\"Retrieve projects\",\"description\":\"Retrieve projects from your instance.\",\"parameters\":[{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## Create a project\n\n> Create a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"badRequest\":{\"description\":\"The request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/projects\":{\"post\":{\"tags\":[\"Projects\"],\"summary\":\"Create a project\",\"description\":\"Create a project on your instance.\",\"requestBody\":{\"description\":\"Payload for project to create.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"201\":{\"description\":\"Operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badRequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## Update a project\n\n> Update a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readOnly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readOnly\":true}}}},\"responses\":{\"badRequest\":{\"description\":\"The request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}\":{\"put\":{\"tags\":[\"Projects\"],\"summary\":\"Update a project\",\"description\":\"Update a project on your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectId\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Updated project object.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badRequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Delete a project\n\n> Delete a project from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}\":{\"delete\":{\"tags\":[\"Projects\"],\"summary\":\"Delete a project\",\"description\":\"Delete a project from your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectId\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## List project members\n\n> Returns a list of all members of a project including their role. Requires user:list scope.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"The maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"Paginate by setting the cursor parameter to the nextCursor attribute returned by the previous request's response. Default value fetches the first \\\"page\\\" of the collection. See pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectMemberList\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/projectMember\"}},\"nextCursor\":{\"type\":\"string\",\"description\":\"Paginate through project members by setting the cursor parameter to the nextCursor attribute returned by a previous request. Default value fetches the first page of the collection.\",\"nullable\":true}}},\"projectMember\":{\"type\":\"object\",\"description\":\"A project member (user with their role in the project).\",\"properties\":{\"id\":{\"type\":\"string\",\"description\":\"The user's unique identifier.\",\"readOnly\":true},\"email\":{\"type\":\"string\",\"format\":\"email\",\"description\":\"The user's email address.\",\"readOnly\":true},\"firstName\":{\"type\":\"string\",\"maxLength\":32,\"description\":\"The user's first name.\",\"readOnly\":true},\"lastName\":{\"type\":\"string\",\"maxLength\":32,\"description\":\"The user's last name.\",\"readOnly\":true},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"When the user was created.\",\"readOnly\":true},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"When the user was last updated.\",\"readOnly\":true},\"role\":{\"type\":\"string\",\"description\":\"The user's role in the project (e.g. project:admin, project:viewer).\",\"readOnly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users\":{\"get\":{\"tags\":[\"Projects\"],\"summary\":\"List project members\",\"description\":\"Returns a list of all members of a project including their role. Requires user:list scope.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"Operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectMemberList\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Add one or more users to a project\n\n> Add one or more users to a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users\":{\"post\":{\"tags\":[\"Projects\"],\"summary\":\"Add one or more users to a project\",\"description\":\"Add one or more users to a project on your instance.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Payload containing an array of one or more users to add to the project.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"relations\":{\"type\":\"array\",\"description\":\"A list of userIds and roles to add to the project.\",\"items\":{\"type\":\"object\",\"properties\":{\"userId\":{\"type\":\"string\",\"description\":\"The unique identifier of the user.\"},\"role\":{\"type\":\"string\",\"description\":\"The role assigned to the user in the project.\"}},\"required\":[\"userId\",\"role\"]}}},\"required\":[\"relations\"]}}}},\"responses\":{\"201\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Delete a user from a project\n\n> Delete a user from a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users/{userId}\":{\"delete\":{\"tags\":[\"Projects\"],\"summary\":\"Delete a user from a project\",\"description\":\"Delete a user from a project on your instance.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"name\":\"userId\",\"in\":\"path\",\"description\":\"The ID of the user.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n\n## Change a user's role in a project\n\n> Change a user's role in a project.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"},\"forbidden\":{\"description\":\"Forbidden\"},\"notFound\":{\"description\":\"The specified resource was not found.\"}}},\"paths\":{\"/projects/{projectId}/users/{userId}\":{\"patch\":{\"tags\":[\"Projects\"],\"summary\":\"Change a user's role in a project\",\"description\":\"Change a user's role in a project.\",\"parameters\":[{\"name\":\"projectId\",\"in\":\"path\",\"description\":\"The ID of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"name\":\"userId\",\"in\":\"path\",\"description\":\"The ID of the user.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestBody\":{\"description\":\"Payload containing the new role to assign to the project user.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"role\":{\"type\":\"string\",\"description\":\"The role assigned to the user in the project.\"}},\"required\":[\"role\"]}}}},\"responses\":{\"204\":{\"description\":\"Operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notFound\"}}}}}}\n```\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/projects.md).  # Projects  Operations about projects  ## Retrieve projects  > Retrieve projects from your instance.  ```json {\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Projects\",\"description\":\"Operations abou...",
-        "sections": [
-          {
-            "title": "Projects",
-            "level": 1,
-            "content": "Operations about projects"
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "projects",
-          "retrieve",
-          "create",
-          "project",
-          "update",
-          "delete",
-          "list",
-          "members",
-          "more",
-          "users",
-          "user",
-          "from",
-          "change",
-          "user's",
-          "role"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 8,
-        "complexity": "beginner",
-        "readingTime": "3 min",
-        "contentLength": 14086,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "projects > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/projects.md).\n\n# projects\n\noperations about projects\n\n## retrieve projects\n\n> retrieve projects from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/project\"}},\"nextcursor\":{\"type\":\"string\",\"description\":\"paginate through projects by setting the cursor parameter to a nextcursor attribute returned by a previous request. default value fetches the first \\\"page\\\" of the collection.\",\"nullable\":true}}},\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/projects\":{\"get\":{\"tags\":[\"projects\"],\"summary\":\"retrieve projects\",\"description\":\"retrieve projects from your instance.\",\"parameters\":[{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## create a project\n\n> create a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"badrequest\":{\"description\":\"the request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/projects\":{\"post\":{\"tags\":[\"projects\"],\"summary\":\"create a project\",\"description\":\"create a project on your instance.\",\"requestbody\":{\"description\":\"payload for project to create.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"201\":{\"description\":\"operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badrequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n\n## update a project\n\n> update a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"schemas\":{\"project\":{\"type\":\"object\",\"additionalproperties\":false,\"required\":[\"name\"],\"properties\":{\"id\":{\"type\":\"string\",\"readonly\":true},\"name\":{\"type\":\"string\"},\"type\":{\"type\":\"string\",\"readonly\":true}}}},\"responses\":{\"badrequest\":{\"description\":\"the request is invalid or provides malformed data.\"},\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}\":{\"put\":{\"tags\":[\"projects\"],\"summary\":\"update a project\",\"description\":\"update a project on your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectid\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"requestbody\":{\"description\":\"updated project object.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/project\"}}},\"required\":true},\"responses\":{\"204\":{\"description\":\"operation successful.\"},\"400\":{\"$ref\":\"#/components/responses/badrequest\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## delete a project\n\n> delete a project from your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}\":{\"delete\":{\"tags\":[\"projects\"],\"summary\":\"delete a project\",\"description\":\"delete a project from your instance.\",\"parameters\":[{\"in\":\"path\",\"name\":\"projectid\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}}],\"responses\":{\"204\":{\"description\":\"operation successful.\"},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## list project members\n\n> returns a list of all members of a project including their role. requires user:list scope.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"parameters\":{\"limit\":{\"name\":\"limit\",\"in\":\"query\",\"description\":\"the maximum number of items to return.\",\"required\":false,\"schema\":{\"type\":\"number\",\"default\":100,\"maximum\":250}},\"cursor\":{\"name\":\"cursor\",\"in\":\"query\",\"description\":\"paginate by setting the cursor parameter to the nextcursor attribute returned by the previous request's response. default value fetches the first \\\"page\\\" of the collection. see pagination for more detail.\",\"required\":false,\"style\":\"form\",\"schema\":{\"type\":\"string\"}}},\"schemas\":{\"projectmemberlist\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/projectmember\"}},\"nextcursor\":{\"type\":\"string\",\"description\":\"paginate through project members by setting the cursor parameter to the nextcursor attribute returned by a previous request. default value fetches the first page of the collection.\",\"nullable\":true}}},\"projectmember\":{\"type\":\"object\",\"description\":\"a project member (user with their role in the project).\",\"properties\":{\"id\":{\"type\":\"string\",\"description\":\"the user's unique identifier.\",\"readonly\":true},\"email\":{\"type\":\"string\",\"format\":\"email\",\"description\":\"the user's email address.\",\"readonly\":true},\"firstname\":{\"type\":\"string\",\"maxlength\":32,\"description\":\"the user's first name.\",\"readonly\":true},\"lastname\":{\"type\":\"string\",\"maxlength\":32,\"description\":\"the user's last name.\",\"readonly\":true},\"createdat\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"when the user was created.\",\"readonly\":true},\"updatedat\":{\"type\":\"string\",\"format\":\"date-time\",\"description\":\"when the user was last updated.\",\"readonly\":true},\"role\":{\"type\":\"string\",\"description\":\"the user's role in the project (e.g. project:admin, project:viewer).\",\"readonly\":true}}}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"},\"forbidden\":{\"description\":\"forbidden\"},\"notfound\":{\"description\":\"the specified resource was not found.\"}}},\"paths\":{\"/projects/{projectid}/users\":{\"get\":{\"tags\":[\"projects\"],\"summary\":\"list project members\",\"description\":\"returns a list of all members of a project including their role. requires user:list scope.\",\"parameters\":[{\"name\":\"projectid\",\"in\":\"path\",\"description\":\"the id of the project.\",\"required\":true,\"schema\":{\"type\":\"string\"}},{\"$ref\":\"#/components/parameters/limit\"},{\"$ref\":\"#/components/parameters/cursor\"}],\"responses\":{\"200\":{\"description\":\"operation successful.\",\"content\":{\"application/json\":{\"schema\":{\"$ref\":\"#/components/schemas/projectmemberlist\"}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"},\"403\":{\"$ref\":\"#/components/responses/forbidden\"},\"404\":{\"$ref\":\"#/components/responses/notfound\"}}}}}}\n```\n\n## add one or more users to a project\n\n> add one or more users to a project on your instance.\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"projects\",\"description\":\"operations about projects\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat",
-        "importantTerms": [
-          "description",
-          "type",
-          "project",
-          "projects",
-          "components",
-          "responses",
-          "name",
-          "string",
-          "true",
-          "unauthorized",
-          "user",
-          "required",
-          "schema",
-          "forbidden",
-          "tags",
-          "apikeyauth",
-          "bearerauth",
-          "role",
-          "json",
-          "parameters",
-          "readonly",
-          "your",
-          "instance",
-          "notfound",
-          "projectid",
-          "cursor",
-          "schemas",
-          "object",
-          "delete",
-          "operations",
-          "about",
-          "properties",
-          "users",
-          "from",
-          "openapi",
-          "info",
-          "title",
-          "public",
-          "version",
-          "servers",
-          "security",
-          "securityschemes",
-          "apikey",
-          "header",
-          "http",
-          "scheme",
-          "bearer",
-          "bearerformat",
-          "paths",
-          "summary"
-        ]
-      }
-    },
-    {
-      "id": "page-0115",
+      "id": "page-0116",
       "title": "Community Package",
       "url": "https://docs.n8n.io/connect/n8n-api/community-package.md",
       "urlPath": "connect/n8n-api/community-package.md",
@@ -11358,77 +11429,6 @@
           "items",
           "nodes",
           "paths"
-        ]
-      }
-    },
-    {
-      "id": "page-0116",
-      "title": "Discover",
-      "url": "https://docs.n8n.io/connect/n8n-api/discover.md",
-      "urlPath": "connect/n8n-api/discover.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/discover.md).\n\n# Discover\n\nAPI capability discovery\n\n## Discover available API capabilities\n\n> Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated API key. Use query parameters to narrow the response.<br>\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n Public API\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"Discover\",\"description\":\"API capability discovery\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}],\"components\":{\"securitySchemes\":{\"ApiKeyAuth\":{\"type\":\"apiKey\",\"in\":\"header\",\"name\":\"X-N8N-API-KEY\"},\"BearerAuth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerFormat\":\"JWT\"}},\"responses\":{\"unauthorized\":{\"description\":\"Unauthorized\"}}},\"paths\":{\"/discover\":{\"get\":{\"tags\":[\"Discover\"],\"summary\":\"Discover available API capabilities\",\"description\":\"Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated API key. Use query parameters to narrow the response.\\n\",\"parameters\":[{\"name\":\"include\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"schemas\"]},\"description\":\"Include additional data. Use \\\"schemas\\\" to inline request body schemas per endpoint, eliminating the need to fetch the full OpenAPI spec.\\n\"},{\"name\":\"resource\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"Filter to a specific resource (e.g. \\\"workflow\\\", \\\"tags\\\", \\\"credential\\\").\\n\"},{\"name\":\"operation\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"Filter to endpoints with a specific operation (e.g. \\\"read\\\", \\\"create\\\", \\\"list\\\").\\n\"}],\"responses\":{\"200\":{\"description\":\"Discovery response with available resources and endpoints.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"scopes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"The API key's active scopes\"},\"resources\":{\"type\":\"object\",\"additionalProperties\":{\"type\":\"object\",\"properties\":{\"operations\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"endpoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"method\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"operationId\":{\"type\":\"string\"},\"requestSchema\":{\"type\":\"object\",\"description\":\"Request body schema (only present when include=schemas and the endpoint accepts a request body).\\n\"}}}}}}},\"filters\":{\"type\":\"object\",\"description\":\"Available query parameter filters. The values arrays reflect what the caller's scopes permit.\\n\",\"additionalProperties\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"values\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}}}},\"specUrl\":{\"type\":\"string\",\"description\":\"URL to the full OpenAPI specification\"}}}}}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/n8n-api/discover.md).  # Discover  API capability discovery  ## Discover available API capabilities  > Returns a filtered capability map based on the caller's API key scopes. Each resource includes the operations and endpoints accessible to the authenticated AP...",
-        "sections": [
-          {
-            "title": "Discover",
-            "level": 1,
-            "content": "API capability discovery"
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "discover",
-          "available",
-          "capabilities"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 1,
-        "complexity": "beginner",
-        "readingTime": "1 min",
-        "contentLength": 3137,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "discover > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/n8n-api/discover.md).\n\n# discover\n\napi capability discovery\n\n## discover available api capabilities\n\n> returns a filtered capability map based on the caller's api key scopes. each resource includes the operations and endpoints accessible to the authenticated api key. use query parameters to narrow the response.<br>\n\n```json\n{\"openapi\":\"3.0.0\",\"info\":{\"title\":\"n8n public api\",\"version\":\"1.1.1\"},\"tags\":[{\"name\":\"discover\",\"description\":\"api capability discovery\"}],\"servers\":[{\"url\":\"/api/v1\"}],\"security\":[{\"apikeyauth\":[]},{\"bearerauth\":[]}],\"components\":{\"securityschemes\":{\"apikeyauth\":{\"type\":\"apikey\",\"in\":\"header\",\"name\":\"x-n8n-api-key\"},\"bearerauth\":{\"type\":\"http\",\"scheme\":\"bearer\",\"bearerformat\":\"jwt\"}},\"responses\":{\"unauthorized\":{\"description\":\"unauthorized\"}}},\"paths\":{\"/discover\":{\"get\":{\"tags\":[\"discover\"],\"summary\":\"discover available api capabilities\",\"description\":\"returns a filtered capability map based on the caller's api key scopes. each resource includes the operations and endpoints accessible to the authenticated api key. use query parameters to narrow the response.\\n\",\"parameters\":[{\"name\":\"include\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\",\"enum\":[\"schemas\"]},\"description\":\"include additional data. use \\\"schemas\\\" to inline request body schemas per endpoint, eliminating the need to fetch the full openapi spec.\\n\"},{\"name\":\"resource\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"filter to a specific resource (e.g. \\\"workflow\\\", \\\"tags\\\", \\\"credential\\\").\\n\"},{\"name\":\"operation\",\"in\":\"query\",\"required\":false,\"schema\":{\"type\":\"string\"},\"description\":\"filter to endpoints with a specific operation (e.g. \\\"read\\\", \\\"create\\\", \\\"list\\\").\\n\"}],\"responses\":{\"200\":{\"description\":\"discovery response with available resources and endpoints.\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"scopes\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"the api key's active scopes\"},\"resources\":{\"type\":\"object\",\"additionalproperties\":{\"type\":\"object\",\"properties\":{\"operations\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"endpoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"method\":{\"type\":\"string\"},\"path\":{\"type\":\"string\"},\"operationid\":{\"type\":\"string\"},\"requestschema\":{\"type\":\"object\",\"description\":\"request body schema (only present when include=schemas and the endpoint accepts a request body).\\n\"}}}}}}},\"filters\":{\"type\":\"object\",\"description\":\"available query parameter filters. the values arrays reflect what the caller's scopes permit.\\n\",\"additionalproperties\":{\"type\":\"object\",\"properties\":{\"description\":{\"type\":\"string\"},\"values\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}}}},\"specurl\":{\"type\":\"string\",\"description\":\"url to the full openapi specification\"}}}}}}}},\"401\":{\"$ref\":\"#/components/responses/unauthorized\"}}}}}}\n```\n discover",
-        "importantTerms": [
-          "type",
-          "description",
-          "string",
-          "discover",
-          "object",
-          "available",
-          "query",
-          "scopes",
-          "endpoints",
-          "name",
-          "schema",
-          "properties",
-          "capability",
-          "resource",
-          "schemas",
-          "array",
-          "items",
-          "discovery",
-          "caller",
-          "operations",
-          "parameters",
-          "response",
-          "openapi",
-          "tags",
-          "responses",
-          "unauthorized",
-          "include",
-          "required",
-          "false",
-          "request",
-          "body"
         ]
       }
     },
@@ -11844,53 +11844,6 @@
     },
     {
       "id": "page-0121",
-      "title": "Create nodes",
-      "url": "https://docs.n8n.io/connect/create-nodes.md",
-      "urlPath": "connect/create-nodes.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes.md).\n\n# Create nodes\n\n{% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %}\n[Overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %}\n[Plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wQbpixeuT2RFUi6Q89\" %}\n[Build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sSSskqiqdxghCnBmrO\" %}\n[Test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mGhSdamG77HIyHBE1\" %}\n[Deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes.md).  # Create nodes  {% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %} [Overview](/connect/create-nodes/overview.md) {% endcontent-ref %}  {% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %} [Plan your node](/connect/create-nodes/plan-your-node....",
-        "sections": [
-          {
-            "title": "Create nodes",
-            "level": 1,
-            "content": "{% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %}\n[Overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %}\n[Plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wQbpixeuT2RFUi6Q89\" %}\n[Build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sSSskqiqdxghCnBmrO\" %}\n[Test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mGhSdamG77HIyHBE1\" %}\n[Deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}"
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "create",
-          "nodes"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 0,
-        "complexity": "beginner",
-        "readingTime": "1 min",
-        "contentLength": 927,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "create nodes > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/create-nodes.md).\n\n# create nodes\n\n{% content-ref url=\"/pages/mk0shfymqoy6qeczksm8\" %}\n[overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/pnim6qrfiqoqlehejxhw\" %}\n[plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wqbpixeut2rfui6q89\" %}\n[build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sssskqiqdxghcnbmro\" %}\n[test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mghsdamg77hiyhbe1\" %}\n[deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}\n create nodes",
-        "importantTerms": [
-          "create",
-          "nodes",
-          "your",
-          "node",
-          "pages",
-          "connect",
-          "content",
-          "endcontent"
-        ]
-      }
-    },
-    {
-      "id": "page-0122",
       "title": "Overview",
       "url": "https://docs.n8n.io/connect/create-nodes/overview.md",
       "urlPath": "connect/create-nodes/overview.md",
@@ -11944,6 +11897,53 @@
           "community",
           "reference",
           "prerequisites"
+        ]
+      }
+    },
+    {
+      "id": "page-0122",
+      "title": "Create nodes",
+      "url": "https://docs.n8n.io/connect/create-nodes.md",
+      "urlPath": "connect/create-nodes.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes.md).\n\n# Create nodes\n\n{% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %}\n[Overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %}\n[Plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wQbpixeuT2RFUi6Q89\" %}\n[Build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sSSskqiqdxghCnBmrO\" %}\n[Test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mGhSdamG77HIyHBE1\" %}\n[Deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes.md).  # Create nodes  {% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %} [Overview](/connect/create-nodes/overview.md) {% endcontent-ref %}  {% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %} [Plan your node](/connect/create-nodes/plan-your-node....",
+        "sections": [
+          {
+            "title": "Create nodes",
+            "level": 1,
+            "content": "{% content-ref url=\"/pages/Mk0sHfYMQoY6qEcZKsm8\" %}\n[Overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/PnIM6QrFiqoQLeHeJxHw\" %}\n[Plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wQbpixeuT2RFUi6Q89\" %}\n[Build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sSSskqiqdxghCnBmrO\" %}\n[Test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mGhSdamG77HIyHBE1\" %}\n[Deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}"
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "create",
+          "nodes"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 0,
+        "complexity": "beginner",
+        "readingTime": "1 min",
+        "contentLength": 927,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "create nodes > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/create-nodes.md).\n\n# create nodes\n\n{% content-ref url=\"/pages/mk0shfymqoy6qeczksm8\" %}\n[overview](/connect/create-nodes/overview.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/pnim6qrfiqoqlehejxhw\" %}\n[plan your node](/connect/create-nodes/plan-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/86wqbpixeut2rfui6q89\" %}\n[build your node](/connect/create-nodes/build-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/51sssskqiqdxghcnbmro\" %}\n[test your node](/connect/create-nodes/test-your-node.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/eq6mghsdamg77hiyhbe1\" %}\n[deploy your node](/connect/create-nodes/deploy-your-node.md)\n{% endcontent-ref %}\n create nodes",
+        "importantTerms": [
+          "create",
+          "nodes",
+          "your",
+          "node",
+          "pages",
+          "connect",
+          "content",
+          "endcontent"
         ]
       }
     },
@@ -12506,54 +12506,6 @@
     },
     {
       "id": "page-0128",
-      "title": "Build your node",
-      "url": "https://docs.n8n.io/connect/create-nodes/build-your-node.md",
-      "urlPath": "connect/create-nodes/build-your-node.md",
-      "category": "other",
-      "subcategory": null,
-      "nodeName": null,
-      "nodeType": null,
-      "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).\n\n# Build your node\n\nThis section provides tutorials on building nodes. It covers:\n\n* [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [Reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node UI elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\nComing soon:\n\n* More tutorials\n* Revised guidance on standards\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).  # Build your node  This section provides tutorials on building nodes. It covers:  * [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md) * [Reference](/co...",
-        "sections": [
-          {
-            "title": "Build your node",
-            "level": 1,
-            "content": "This section provides tutorials on building nodes. It covers:\n\n* [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [Reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node UI elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\nComing soon:\n\n* More tutorials\n* Revised guidance on standards"
-          }
-        ]
-      },
-      "metadata": {
-        "keywords": [
-          "build",
-          "your",
-          "node"
-        ],
-        "useCases": [],
-        "operations": [],
-        "codeExamples": 0,
-        "complexity": "beginner",
-        "readingTime": "1 min",
-        "contentLength": 1075,
-        "relatedPages": []
-      },
-      "searchIndex": {
-        "fullText": "build your node > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).\n\n# build your node\n\nthis section provides tutorials on building nodes. it covers:\n\n* [tutorial: build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node ui elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\ncoming soon:\n\n* more tutorials\n* revised guidance on standards\n build your node",
-        "importantTerms": [
-          "node",
-          "build",
-          "your",
-          "nodes",
-          "connect",
-          "create",
-          "reference",
-          "files"
-        ]
-      }
-    },
-    {
-      "id": "page-0129",
       "title": "Set up your development environment",
       "url": "https://docs.n8n.io/connect/create-nodes/build-your-node/set-up-your-development-environment.md",
       "urlPath": "connect/create-nodes/build-your-node/set-up-your-development-environment.md",
@@ -12623,6 +12575,54 @@
           "items",
           "itemname",
           "editorconfig"
+        ]
+      }
+    },
+    {
+      "id": "page-0129",
+      "title": "Build your node",
+      "url": "https://docs.n8n.io/connect/create-nodes/build-your-node.md",
+      "urlPath": "connect/create-nodes/build-your-node.md",
+      "category": "other",
+      "subcategory": null,
+      "nodeName": null,
+      "nodeType": null,
+      "content": {
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).\n\n# Build your node\n\nThis section provides tutorials on building nodes. It covers:\n\n* [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [Reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node UI elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\nComing soon:\n\n* More tutorials\n* Revised guidance on standards\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).  # Build your node  This section provides tutorials on building nodes. It covers:  * [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md) * [Reference](/co...",
+        "sections": [
+          {
+            "title": "Build your node",
+            "level": 1,
+            "content": "This section provides tutorials on building nodes. It covers:\n\n* [Tutorial: Build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [Reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node UI elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\nComing soon:\n\n* More tutorials\n* Revised guidance on standards"
+          }
+        ]
+      },
+      "metadata": {
+        "keywords": [
+          "build",
+          "your",
+          "node"
+        ],
+        "useCases": [],
+        "operations": [],
+        "codeExamples": 0,
+        "complexity": "beginner",
+        "readingTime": "1 min",
+        "contentLength": 1075,
+        "relatedPages": []
+      },
+      "searchIndex": {
+        "fullText": "build your node > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/connect/create-nodes/build-your-node.md).\n\n# build your node\n\nthis section provides tutorials on building nodes. it covers:\n\n* [tutorial: build a declarative-style node](/connect/create-nodes/build-your-node/tutorial-build-a-declarative-style-node.md)\n* [reference](/connect/create-nodes/build-your-node/reference.md) material on [file structure](/connect/create-nodes/plan-your-node/choose-node-file-structure.md), parameter definitions for [base](/connect/create-nodes/build-your-node/reference/base-files.md), [codex](/connect/create-nodes/build-your-node/reference/codex-files.md), and [credentials](/connect/create-nodes/build-your-node/reference/credentials-files.md) files, [node ui elements](/connect/create-nodes/build-your-node/reference/node-ui-elements.md), and more.\n\ncoming soon:\n\n* more tutorials\n* revised guidance on standards\n build your node",
+        "importantTerms": [
+          "node",
+          "build",
+          "your",
+          "nodes",
+          "connect",
+          "create",
+          "reference",
+          "files"
         ]
       }
     },
@@ -15289,13 +15289,13 @@
       "nodeName": null,
       "nodeType": null,
       "content": {
-        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/administer/manage-credentials.md).\n\n# Manage credentials\n\n{% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %}\n[Share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/HwwMcE7SvGUCdMwNzR3M\" %}\n[Credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/M9gsfQ0RNH07bXkR3BqN\" %}\n[Use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}\n",
-        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/administer/manage-credentials.md).  # Manage credentials  {% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %} [Share credentials securely](/administer/manage-credentials/share-credentials-securely.md) {% endcontent-ref %}  {% content-ref url=\"/pages/HwwMcE7SvGUCdMwNzR3...",
+        "markdown": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/administer/manage-credentials.md).\n\n# Manage credentials\n\n{% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %}\n[Share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/2JFFiCPhd3l5EXC9HRpA\" %}\n[End-user credentials](/administer/manage-credentials/end-user-credentials.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/HwwMcE7SvGUCdMwNzR3M\" %}\n[Credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/M9gsfQ0RNH07bXkR3BqN\" %}\n[Use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}\n",
+        "excerpt": "> For the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.n8n.io/administer/manage-credentials.md).  # Manage credentials  {% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %} [Share credentials securely](/administer/manage-credentials/share-credentials-securely.md) {% endcontent-ref %}  {% content-ref url=\"/pages/2JFFiCPhd3l5EXC9HRp...",
         "sections": [
           {
             "title": "Manage credentials",
             "level": 1,
-            "content": "{% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %}\n[Share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/HwwMcE7SvGUCdMwNzR3M\" %}\n[Credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/M9gsfQ0RNH07bXkR3BqN\" %}\n[Use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}"
+            "content": "{% content-ref url=\"/pages/KTnwxq78xRyIa7If3JnD\" %}\n[Share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/2JFFiCPhd3l5EXC9HRpA\" %}\n[End-user credentials](/administer/manage-credentials/end-user-credentials.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/HwwMcE7SvGUCdMwNzR3M\" %}\n[Credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/M9gsfQ0RNH07bXkR3BqN\" %}\n[Use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}"
           }
         ]
       },
@@ -15309,11 +15309,11 @@
         "codeExamples": 0,
         "complexity": "beginner",
         "readingTime": "1 min",
-        "contentLength": 773,
+        "contentLength": 926,
         "relatedPages": []
       },
       "searchIndex": {
-        "fullText": "manage credentials > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/administer/manage-credentials.md).\n\n# manage credentials\n\n{% content-ref url=\"/pages/ktnwxq78xryia7if3jnd\" %}\n[share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/hwwmce7svgucdmwnzr3m\" %}\n[credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/m9gsfq0rnh07bxkr3bqn\" %}\n[use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}\n manage credentials",
+        "fullText": "manage credentials > for the complete documentation index, see [llms.txt](https://docs.n8n.io/llms.txt). markdown versions of documentation pages are available by appending `.md` to page urls; this page is available as [markdown](https://docs.n8n.io/administer/manage-credentials.md).\n\n# manage credentials\n\n{% content-ref url=\"/pages/ktnwxq78xryia7if3jnd\" %}\n[share credentials securely](/administer/manage-credentials/share-credentials-securely.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/2jfficphd3l5exc9hrpa\" %}\n[end-user credentials](/administer/manage-credentials/end-user-credentials.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/hwwmce7svgucdmwnzr3m\" %}\n[credential overwrites](/administer/manage-credentials/credential-overwrites.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/m9gsfq0rnh07bxkr3bqn\" %}\n[use external secret stores](/administer/manage-credentials/use-external-secret-stores.md)\n{% endcontent-ref %}\n manage credentials",
         "importantTerms": [
           "credentials",
           "manage",
@@ -16301,7 +16301,7 @@
         "page-0011",
         "page-0017",
         "page-0021",
-        "page-0101",
+        "page-0102",
         "page-0160"
       ],
       "self": [
@@ -16340,7 +16340,7 @@
         "page-0019",
         "page-0096",
         "page-0100",
-        "page-0102",
+        "page-0101",
         "page-0123",
         "page-0128",
         "page-0129",
@@ -16360,7 +16360,7 @@
       "change": [
         "page-0006",
         "page-0103",
-        "page-0114",
+        "page-0113",
         "page-0135"
       ],
       "instance": [
@@ -16486,7 +16486,7 @@
         "page-0094",
         "page-0095",
         "page-0096",
-        "page-0115",
+        "page-0116",
         "page-0130",
         "page-0151"
       ],
@@ -16532,7 +16532,7 @@
       ],
       "npm\"": [
         "page-0009",
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"install": [
@@ -16547,7 +16547,7 @@
       ],
       "npm\"></a>": [
         "page-0009",
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "href=\"#or\"": [
@@ -16743,7 +16743,7 @@
         "page-0009",
         "page-0017",
         "page-0019",
-        "page-0101",
+        "page-0102",
         "page-0131",
         "page-0132",
         "page-0146",
@@ -16774,7 +16774,7 @@
         "page-0016",
         "page-0018",
         "page-0019",
-        "page-0122",
+        "page-0121",
         "page-0131",
         "page-0132"
       ],
@@ -16784,7 +16784,7 @@
         "page-0016",
         "page-0018",
         "page-0019",
-        "page-0122",
+        "page-0121",
         "page-0131",
         "page-0132"
       ],
@@ -16794,7 +16794,7 @@
         "page-0016",
         "page-0018",
         "page-0019",
-        "page-0122",
+        "page-0121",
         "page-0131",
         "page-0132"
       ],
@@ -16818,7 +16818,7 @@
         "page-0037",
         "page-0039",
         "page-0072",
-        "page-0102",
+        "page-0101",
         "page-0130",
         "page-0150",
         "page-0161"
@@ -16840,7 +16840,7 @@
         "page-0037",
         "page-0039",
         "page-0072",
-        "page-0102",
+        "page-0101",
         "page-0130",
         "page-0150",
         "page-0161"
@@ -16912,7 +16912,7 @@
         "page-0019",
         "page-0095",
         "page-0096",
-        "page-0107",
+        "page-0108",
         "page-0159",
         "page-0160"
       ],
@@ -16952,7 +16952,7 @@
         "page-0075",
         "page-0095",
         "page-0096",
-        "page-0107"
+        "page-0108"
       ],
       "(unstable)": [
         "page-0010"
@@ -17212,15 +17212,15 @@
         "page-0018",
         "page-0019",
         "page-0103",
-        "page-0107",
+        "page-0108",
         "page-0109",
         "page-0110",
         "page-0112",
         "page-0113",
-        "page-0114",
+        "page-0115",
         "page-0118",
         "page-0120",
-        "page-0121",
+        "page-0122",
         "page-0131",
         "page-0132",
         "page-0161"
@@ -17257,7 +17257,7 @@
         "page-0019",
         "page-0035",
         "page-0103",
-        "page-0114",
+        "page-0113",
         "page-0120",
         "page-0152",
         "page-0153"
@@ -17496,7 +17496,7 @@
         "page-0012",
         "page-0014",
         "page-0083",
-        "page-0108",
+        "page-0107",
         "page-0109",
         "page-0131",
         "page-0132",
@@ -17508,8 +17508,8 @@
         "page-0017",
         "page-0019",
         "page-0024",
-        "page-0102",
-        "page-0129",
+        "page-0101",
+        "page-0128",
         "page-0147",
         "page-0150",
         "page-0160",
@@ -17526,8 +17526,8 @@
         "page-0014",
         "page-0019",
         "page-0024",
-        "page-0102",
-        "page-0129",
+        "page-0101",
+        "page-0128",
         "page-0150"
       ],
       "id=\"test": [
@@ -17541,8 +17541,8 @@
         "page-0014",
         "page-0019",
         "page-0024",
-        "page-0102",
-        "page-0129",
+        "page-0101",
+        "page-0128",
         "page-0150"
       ],
       "heroku": [
@@ -17557,9 +17557,9 @@
         "page-0017",
         "page-0018",
         "page-0019",
-        "page-0107",
+        "page-0108",
         "page-0109",
-        "page-0114",
+        "page-0113",
         "page-0119",
         "page-0120",
         "page-0131",
@@ -17602,7 +17602,7 @@
         "page-0018",
         "page-0019",
         "page-0097",
-        "page-0129",
+        "page-0128",
         "page-0144"
       ],
       "variables": [
@@ -17926,12 +17926,12 @@
         "page-0076",
         "page-0103",
         "page-0106",
-        "page-0107",
+        "page-0108",
         "page-0109",
         "page-0110",
         "page-0112",
         "page-0113",
-        "page-0114",
+        "page-0115",
         "page-0118",
         "page-0152"
       ],
@@ -18103,7 +18103,7 @@
         "page-0076",
         "page-0077",
         "page-0079",
-        "page-0113",
+        "page-0115",
         "page-0125",
         "page-0134",
         "page-0135",
@@ -18327,13 +18327,13 @@
         "page-0076",
         "page-0105",
         "page-0106",
-        "page-0107",
+        "page-0108",
         "page-0109",
         "page-0110",
         "page-0112",
         "page-0113",
-        "page-0114",
         "page-0115",
+        "page-0116",
         "page-0118",
         "page-0120",
         "page-0131",
@@ -18509,7 +18509,7 @@
         "page-0070",
         "page-0111",
         "page-0113",
-        "page-0114",
+        "page-0115",
         "page-0160",
         "page-0161"
       ],
@@ -18708,7 +18708,7 @@
       ],
       "runs": [
         "page-0019",
-        "page-0108"
+        "page-0107"
       ],
       "(node": [
         "page-0019",
@@ -18733,14 +18733,14 @@
         "page-0094",
         "page-0095",
         "page-0096",
-        "page-0102",
+        "page-0101",
         "page-0120",
         "page-0123",
         "page-0124",
         "page-0125",
         "page-0126",
         "page-0127",
-        "page-0128",
+        "page-0129",
         "page-0130",
         "page-0131",
         "page-0132",
@@ -19715,11 +19715,11 @@
       ],
       "cloud\"": [
         "page-0021",
-        "page-0101"
+        "page-0102"
       ],
       "cloud\"></a>": [
         "page-0021",
-        "page-0101"
+        "page-0102"
       ],
       "shared": [
         "page-0021"
@@ -19949,7 +19949,7 @@
       ],
       "evaluation": [
         "page-0025",
-        "page-0108"
+        "page-0107"
       ],
       "href=\"#evaluation": [
         "page-0025"
@@ -20217,7 +20217,7 @@
       ],
       "available": [
         "page-0027",
-        "page-0116",
+        "page-0114",
         "page-0159",
         "page-0160"
       ],
@@ -20456,7 +20456,7 @@
         "page-0070",
         "page-0076",
         "page-0100",
-        "page-0107",
+        "page-0108",
         "page-0120",
         "page-0160",
         "page-0161"
@@ -20486,7 +20486,7 @@
       ],
       "build": [
         "page-0032",
-        "page-0128",
+        "page-0129",
         "page-0130",
         "page-0131",
         "page-0132"
@@ -20509,7 +20509,7 @@
       ],
       "building": [
         "page-0033",
-        "page-0102",
+        "page-0101",
         "page-0125",
         "page-0130"
       ],
@@ -20519,7 +20519,7 @@
         "page-0036",
         "page-0045",
         "page-0083",
-        "page-0107",
+        "page-0108",
         "page-0159",
         "page-0160",
         "page-0161"
@@ -20531,7 +20531,7 @@
       ],
       "capabilities": [
         "page-0034",
-        "page-0116"
+        "page-0114"
       ],
       "href=\"#current": [
         "page-0034"
@@ -20638,7 +20638,7 @@
       "overview": [
         "page-0035",
         "page-0039",
-        "page-0122",
+        "page-0121",
         "page-0130"
       ],
       "href=\"#overview\"": [
@@ -20697,7 +20697,7 @@
       "role": [
         "page-0035",
         "page-0103",
-        "page-0114",
+        "page-0113",
         "page-0120",
         "page-0160",
         "page-0161"
@@ -20765,7 +20765,7 @@
         "page-0100",
         "page-0101",
         "page-0102",
-        "page-0121",
+        "page-0122",
         "page-0124",
         "page-0127",
         "page-0143",
@@ -20918,7 +20918,7 @@
         "page-0085",
         "page-0091",
         "page-0098",
-        "page-0102",
+        "page-0101",
         "page-0124",
         "page-0127",
         "page-0143",
@@ -20930,7 +20930,7 @@
         "page-0085",
         "page-0091",
         "page-0098",
-        "page-0102",
+        "page-0101",
         "page-0124",
         "page-0127",
         "page-0143",
@@ -21124,7 +21124,7 @@
       ],
       "missing": [
         "page-0047",
-        "page-0101"
+        "page-0102"
       ],
       "previous": [
         "page-0047",
@@ -23754,7 +23754,7 @@
         "page-0100",
         "page-0101",
         "page-0102",
-        "page-0115",
+        "page-0116",
         "page-0150"
       ],
       "href=\"#community": [
@@ -23778,7 +23778,7 @@
       ],
       "existing": [
         "page-0090",
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "predefined": [
@@ -23858,7 +23858,7 @@
         "page-0094",
         "page-0095",
         "page-0096",
-        "page-0115"
+        "page-0116"
       ],
       "href=\"#uninstall": [
         "page-0094",
@@ -23910,7 +23910,7 @@
       ],
       "package": [
         "page-0097",
-        "page-0115",
+        "page-0116",
         "page-0119",
         "page-0127",
         "page-0131",
@@ -23925,8 +23925,8 @@
       ],
       "packages": [
         "page-0097",
-        "page-0101",
-        "page-0115",
+        "page-0102",
+        "page-0116",
         "page-0160"
       ],
       "href=\"#manage": [
@@ -23934,14 +23934,14 @@
       ],
       "packages\"": [
         "page-0097",
-        "page-0101"
+        "page-0102"
       ],
       "id=\"manage": [
         "page-0097"
       ],
       "packages\"></a>": [
         "page-0097",
-        "page-0101"
+        "page-0102"
       ],
       "risks": [
         "page-0098"
@@ -23976,132 +23976,132 @@
         "page-0100",
         "page-0135"
       ],
-      "error:": [
-        "page-0101"
-      ],
-      "href=\"#error": [
-        "page-0101",
-        "page-0143",
-        "page-0148"
-      ],
-      "id=\"error": [
-        "page-0101",
-        "page-0143",
-        "page-0148"
-      ],
-      "prevent": [
-        "page-0101"
-      ],
-      "loading": [
-        "page-0101",
-        "page-0148"
-      ],
-      "href=\"#prevent": [
-        "page-0101"
-      ],
-      "id=\"prevent": [
-        "page-0101"
-      ],
       "standards": [
-        "page-0102",
+        "page-0101",
         "page-0126",
         "page-0135",
         "page-0150"
       ],
       "href=\"#standards\"": [
-        "page-0102",
+        "page-0101",
         "page-0126",
         "page-0150"
       ],
       "id=\"standards\"></a>": [
-        "page-0102",
+        "page-0101",
         "page-0126",
         "page-0150"
       ],
       "publishing": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "href=\"#publishing": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"publishing": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "href=\"#new": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"new": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "href=\"#existing": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"existing": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "time": [
-        "page-0102",
+        "page-0101",
         "page-0150",
         "page-0160"
       ],
       "href=\"#one": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"one": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "submit": [
-        "page-0102",
+        "page-0101",
         "page-0150",
         "page-0158"
       ],
       "verification": [
-        "page-0102",
+        "page-0101",
         "page-0144",
         "page-0150",
         "page-0160",
         "page-0161"
       ],
       "href=\"#submit": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"submit": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "ready": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "submit?": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "href=\"#ready": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "submit\"": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "id=\"ready": [
-        "page-0102",
+        "page-0101",
         "page-0150"
       ],
       "submit\"></a>": [
-        "page-0102",
+        "page-0101",
         "page-0150"
+      ],
+      "error:": [
+        "page-0102"
+      ],
+      "href=\"#error": [
+        "page-0102",
+        "page-0143",
+        "page-0148"
+      ],
+      "id=\"error": [
+        "page-0102",
+        "page-0143",
+        "page-0148"
+      ],
+      "prevent": [
+        "page-0102"
+      ],
+      "loading": [
+        "page-0102",
+        "page-0148"
+      ],
+      "href=\"#prevent": [
+        "page-0102"
+      ],
+      "id=\"prevent": [
+        "page-0102"
       ],
       "retrieve": [
         "page-0103",
@@ -24112,13 +24112,13 @@
         "page-0110",
         "page-0112",
         "page-0113",
-        "page-0114",
+        "page-0115",
         "page-0117",
         "page-0118"
       ],
       "users": [
         "page-0103",
-        "page-0114",
+        "page-0113",
         "page-0152",
         "page-0160"
       ],
@@ -24127,7 +24127,7 @@
       ],
       "user's": [
         "page-0103",
-        "page-0114"
+        "page-0113"
       ],
       "audit": [
         "page-0104",
@@ -24146,42 +24146,42 @@
       ],
       "tags": [
         "page-0106",
-        "page-0107",
+        "page-0108",
         "page-0110",
         "page-0160"
       ],
+      "cases": [
+        "page-0107"
+      ],
       "retrieves": [
-        "page-0107",
+        "page-0108",
         "page-0110"
       ],
       "publish": [
-        "page-0107"
+        "page-0108"
       ],
       "deactivate": [
-        "page-0107"
+        "page-0108"
       ],
       "archive": [
-        "page-0107"
+        "page-0108"
       ],
       "unarchive": [
-        "page-0107"
+        "page-0108"
       ],
       "transfer": [
-        "page-0107",
+        "page-0108",
         "page-0109"
       ],
       "another": [
-        "page-0107",
+        "page-0108",
         "page-0109"
-      ],
-      "cases": [
-        "page-0108"
       ],
       "list": [
         "page-0109",
         "page-0113",
-        "page-0114",
-        "page-0115"
+        "page-0115",
+        "page-0116"
       ],
       "/credentials/schema/{credentialtypename}": [
         "page-0109"
@@ -24193,52 +24193,52 @@
       "remote": [
         "page-0111"
       ],
-      "table": [
-        "page-0113",
-        "page-0161"
-      ],
-      "tables": [
-        "page-0113",
-        "page-0161"
-      ],
-      "rows": [
-        "page-0113"
-      ],
-      "insert": [
-        "page-0113"
-      ],
-      "into": [
-        "page-0113",
-        "page-0119"
-      ],
-      "upsert": [
-        "page-0113",
-        "page-0126"
-      ],
-      "clear": [
-        "page-0113"
-      ],
-      "columns": [
-        "page-0113"
-      ],
-      "column": [
-        "page-0113"
-      ],
       "projects": [
-        "page-0114",
+        "page-0113",
         "page-0119"
       ],
       "members": [
-        "page-0114"
+        "page-0113"
       ],
       "more": [
-        "page-0114",
+        "page-0113",
         "page-0160"
       ],
-      "installed": [
+      "discover": [
+        "page-0114"
+      ],
+      "table": [
+        "page-0115",
+        "page-0161"
+      ],
+      "tables": [
+        "page-0115",
+        "page-0161"
+      ],
+      "rows": [
         "page-0115"
       ],
-      "discover": [
+      "insert": [
+        "page-0115"
+      ],
+      "into": [
+        "page-0115",
+        "page-0119"
+      ],
+      "upsert": [
+        "page-0115",
+        "page-0126"
+      ],
+      "clear": [
+        "page-0115"
+      ],
+      "columns": [
+        "page-0115"
+      ],
+      "column": [
+        "page-0115"
+      ],
+      "installed": [
         "page-0116"
       ],
       "insights": [
@@ -24817,27 +24817,27 @@
         "page-0127"
       ],
       "development": [
-        "page-0129"
+        "page-0128"
       ],
       "requirements": [
-        "page-0129"
+        "page-0128"
       ],
       "href=\"#requirements\"": [
-        "page-0129"
+        "page-0128"
       ],
       "id=\"requirements\"></a>": [
-        "page-0129"
+        "page-0128"
       ],
       "editor": [
-        "page-0129",
+        "page-0128",
         "page-0148"
       ],
       "href=\"#editor": [
-        "page-0129",
+        "page-0128",
         "page-0148"
       ],
       "id=\"editor": [
-        "page-0129",
+        "page-0128",
         "page-0148"
       ],
       "tool": [
