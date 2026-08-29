@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-26T03:31:40.192Z",
+  "generatedAt": "2026-08-29T14:19:44.789Z",
   "repository": "https://github.com/nusquama/n8nworkflows.xyz.git",
   "sourceRef": "main",
-  "sourceCommit": "93e196919aff55edc2497deb3f42f0d20c8b73ff",
+  "sourceCommit": "ba4c4b621b4cc916d9c0c4efaea872f9fb065b3c",
   "refreshStrategy": "fresh-clone-per-build",
-  "totalWorkflows": 10083,
+  "totalWorkflows": 10085,
   "workflows": [
     {
       "id": 17769,
@@ -238,6 +238,34 @@
         "@n8n/n8n-nodes-langchain.agent",
         "n8n-nodes-base.extractFromFile",
         "@n8n/n8n-nodes-langchain.lmChatOpenAi"
+      ]
+    },
+    {
+      "id": 17746,
+      "slug": "Publish AI-written LinkedIn posts with OpenAI GPT-5 mini and Canvora-17746",
+      "name": "Publish AI Written LinkedIn Posts With OpenAI GPT 5 Mini And Canvora",
+      "tags": [
+        "Social Media",
+        "Multimodal AI"
+      ],
+      "author": "marketer-360",
+      "createdAt": null,
+      "description": null,
+      "hasWorkflow": true,
+      "workflowFile": "publish_ai-written_linkedin_posts_with_openai_gpt-5_mini_and_canvora.json",
+      "workflowPath": "workflows/Publish AI-written LinkedIn posts with OpenAI GPT-5 mini and Canvora-17746/publish_ai-written_linkedin_posts_with_openai_gpt-5_mini_and_canvora.json",
+      "url": "https://n8nworkflows.xyz/workflows/publish-ai-written-linkedin-posts-with-openai-gpt-5-mini-and-canvora-17746\n",
+      "nodeTypes": [
+        "n8n-nodes-base.if",
+        "n8n-nodes-base.set",
+        "n8n-nodes-base.code",
+        "n8n-nodes-base.noOp",
+        "n8n-nodes-base.wait",
+        "n8n-nodes-base.linkedIn",
+        "n8n-nodes-base.stickyNote",
+        "n8n-nodes-base.httpRequest",
+        "n8n-nodes-base.scheduleTrigger",
+        "@n8n/n8n-nodes-langchain.openAi"
       ]
     },
     {
@@ -8372,6 +8400,28 @@
         "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
         "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
         "@n8n/n8n-nodes-langchain.documentDefaultDataLoader"
+      ]
+    },
+    {
+      "id": 16973,
+      "slug": "Search and preview GIFs with forms and GIPHY-16973",
+      "name": "Search And Preview GIFs With Forms And GIPHY",
+      "tags": [
+        "Miscellaneous"
+      ],
+      "author": "rawsun007",
+      "createdAt": null,
+      "description": null,
+      "hasWorkflow": true,
+      "workflowFile": "search_and_preview_gifs_with_forms_and_giphy.json",
+      "workflowPath": "workflows/Search and preview GIFs with forms and GIPHY-16973/search_and_preview_gifs_with_forms_and_giphy.json",
+      "url": "https://n8nworkflows.xyz/workflows/search-and-preview-gifs-with-forms-and-giphy-16973\n",
+      "nodeTypes": [
+        "n8n-nodes-base.code",
+        "n8n-nodes-base.form",
+        "n8n-nodes-base.stickyNote",
+        "n8n-nodes-base.formTrigger",
+        "n8n-nodes-base.httpRequest"
       ]
     },
     {
